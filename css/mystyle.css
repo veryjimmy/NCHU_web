@@ -1,0 +1,81 @@
+.navbar .dropdown ul {
+    display: block;
+    position: absolute;
+    left: 14px;
+    /* top: calc(100% + 30px); */
+    margin: 0;
+    padding: 10px 0;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    background: #fff;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    transition: 0.3s;
+    border-radius: 4px;
+}
+
+.navbar .dropdown ul li {
+    min-width: 200px;
+}
+
+.dropdown-item,
+.navbar .dropdown ul a {
+    padding: 10px 20px;
+    color: #444444;
+}
+
+.navbar .dropdown ul a i {
+    font-size: 12px;
+}
+
+.dropdown-item:hover,
+.dropdown-item.active:hover,
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover>a {
+    color: #cda45e;
+}
+
+.navbar .dropdown ul a:active,
+.navbar .dropdown ul .active:active,
+.navbar .dropdown ul li:active>a {
+    color: #ffffff;
+}
+
+.navbar .dropdown:hover>ul {
+    opacity: 1;
+    top: 100%;
+    left: 13%;
+    visibility: visible;
+}
+
+.navbar .dropdown .dropdown:hover>ul {
+    opacity: 1;
+    top: 0;
+    left: 100%;
+    visibility: visible;
+}
+
+.logo {
+    width: 350px;
+}
+
+.top-square {
+    height: 200px;
+    background-color: #fff;
+}
+
+.bottom-square {
+    height: 150px;
+    background-color: #fff;
+}
+
+.copyright {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    color: rgb(99, 99, 99);
+}
+
+.tab {
+    margin: 3%;
+}
